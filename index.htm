@@ -63,16 +63,14 @@
   </section>
 
 <style>
-  #location {
-  display: flex;        /* enables flexbox */
-  justify-content: center; /* centers horizontally */
-  margin: 40px 0;       /* adds top/bottom spacing */
+ #location {
+  margin: 40px auto;   /* centers the section horizontally */
+  max-width: 900px;    /* cap width on large screens */
 }
 
 .map-container {
   position: relative;
-  width: 90%;           /* shrink width to leave margins */
-  max-width: 800px;     /* optional: cap width on large screens */
+  width: 100%;          /* take full width of parent (which is max 900px now) */
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
